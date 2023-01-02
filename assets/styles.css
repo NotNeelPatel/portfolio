@@ -93,10 +93,31 @@ li {
     margin: 10px;
     padding: 10px;
     background-color: #111;
-
 }
 
 .squarelight {
+    border: 2px solid #aaa;
+    margin: 10px;
+    padding: 10px;
+    background-color: #222;
+}
+
+.square:hover {
+    margin: 5px;
+}
+
+.squarelight:hover {
+    margin: 5px;
+}
+
+.rectangle {
+    border: 2px solid #aaa;
+    margin: 10px;
+    padding: 10px;
+    background-color: #111;
+}
+
+.rectanglelight {
     border: 2px solid #aaa;
     margin: 10px;
     padding: 10px;
