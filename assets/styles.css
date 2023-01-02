@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
+
+@viewport {
+    width: device-width;
+    zoom: 1;
+}
+
+@media only screen and (max-width:800px) {
+    #about {
+        flex-wrap: wrap;
+    }
+
+    aside {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    #projects {
+        display: grid;
+        height: 100%;
+        grid-gap: 10px;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+}
+
+body {
+    font-family: "Inconsolata", monospace;
+    font-size: 15pt;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: #fff;
+    background-color: #000;
+}
+
+header {
+    height: 100vh;
+    text-align: center;
+}
+
+p.header-text {
+    font-size: 2vw;
+}
+
+a.header-text {
+    font-size: 1.5vw;
+}
+
+a {
+    text-decoration: none;
+    color: #8bc7ff
+}
+
+a:hover {
+    color: #aaa
+}
+
+h1 {
+    font-size: 10vw;
+    margin-bottom: 0;
+    text-align: center;
+    background-image: url('https://notneelpatel.github.io/assets/images/home/bg.gif');
+}
+
+i {
+    color: #fff;
+    font-size: 50px;
+}
+
+li {
+    margin-left: 20px;
+}
+
+#about {
+    display: flex;
+}
+
+.abt-img {
+    flex: 1;
+    order: 2;
+}
+
+#abt-txt {
+    order: 3;
+    padding: 20px;
+    margin: left;
+}
+
+.square {
+    border: 2px solid #aaa;
+    margin: 10px;
+    padding: 10px;
+    background-color: #111;
+
+}
+
+.squarelight {
+    border: 2px solid #aaa;
+    margin: 10px;
+    padding: 10px;
+    background-color: #222;
+}
+
+#contact {
+    text-align: center;
+    border: 2px solid;
+    margin: 10px;
+}
