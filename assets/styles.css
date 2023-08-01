@@ -1,131 +1,250 @@
-@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
 
-@viewport {
-    width: device-width;
-    zoom: 1;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@200&display=swap');
+@import url('https://fonts.cdnfonts.com/css/fantasque-sans-mono');
+
+:root{
+    --scroll-offset: 20px;
+    --primaryfont: "Fantasque Sans Mono", serif;
+    --secondaryfont: "Noto Serif", serif;
+    --italicizedfont: "Noto Serif", sans-serif;
+    --backgroundprimary: #f2e5bc;
+    --backgroundsecondary: #ebdbb2;
+    --backgroundtertiary: #d5c4a1;
+    --accentprimary: #427b58;
+    --accentsecondary: #f44336;
+    
+    --textlighter: #7c6f64;
+    --textlight: #665c54;
+    --textdark: #504945;
+    --textdarker: #282828;
+
+    --linkcolour: #458588;
+
 }
 
-@media only screen and (max-width:800px) {
-    #about {
-        flex-wrap: wrap;
-    }
 
-    aside {
-        width: 100%;
-    }
+
+
+
+html {
+    scroll-snap-type: y proximity;
+    scroll-behavior: smooth;
+}
+body { 
+    scroll-snap-type: y proximity;
+    display:block;
+    font-family: var(--primaryfont), serif;
+    color: var(--textdarker);
+    font-size: 14pt;
+    background-color: var(--backgroundtertiary);
 }
 
-@media screen and (min-width: 800px) {
-    #projects {
-        display: grid;
-        height: 100%;
-        grid-gap: 10px;
-        grid-template-rows: repeat(2, 1fr);
-        grid-template-columns: repeat(3, 1fr);
 
-    }
+
+h1, h2, h3, h4, h5{
+    font-family: var(--secondaryfont), serif;
+    font-style: italic;
+    color: var(--textdark);
+}
+h4, h5{
+    color: var(--textlight);
 }
 
-body {
-    font-family: "Inconsolata", monospace;
-    font-size: 15pt;
-    margin-left: 10%;
-    margin-right: 10%;
-    color: #fff;
-    background-color: #000;
+h1{
+    font-size: 4em;
+    margin: 0.25em;
+    color: var(--accentprimary);
+    letter-spacing: 5px;
+    word-spacing: 7px;
+    font-weight: 100;
 }
 
-header {
-    height: 100vh;
-    text-align: center;
+h3{
+    font-size: 1.5em;
+    margin: 0.25em;
 }
 
-p.header-text {
-    font-size: 2vw;
+h4, h5{
+    margin: 0.25em;
 }
 
-a.header-text {
-    font-size: 1.5vw;
+
+a{
+    color: var(--linkcolour)
 }
 
-a {
-    text-decoration: none;
-    color: #8bc7ff
+section {
+    margin: 10px;
+    margin-top: 240px;
+    background-color: var(--backgroundprimary);
+    padding: 15px;
+    scroll-snap-align: top;
+    border-radius: 15px;
+
+}
+/*
+section:nth-child(even) {
+    background-color: var(--backgroundsecondary);
+}
+*/
+
+
+
+
+
+.title-header{
+    background-color: var(--backgroundsecondary);
+    border-radius: 15px;
 }
 
-a:hover {
-    color: #aaa
+
+#skills-grid{
+    background-color: var(--backgroundtertiary);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    border-radius: 15px;
+    padding: 10px;
 }
 
-h1 {
-    font-size: 10vw;
-    margin-bottom: 0;
-    text-align: center;
-    background-image: url('https://notneelpatel.github.io/assets/images/home/bg.gif');
+#projects-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.skill-list{
+    background-color: var(--backgroundsecondary);
+    border:2px solid var(--accentprimary);
+    border-radius: 15px;
+    padding: 10px;
+    margin: 5px;
+    -ms-transition: 0.1s;
+    -o-transition: 0.1s;
+    -moz-transition: 0.1s;
+    -webkit-transition: 0.1s; 
+    transition: 0.1s; 
+    box-shadow: inset 0px 0px 2px 1px var(--textlighter);
+}
+
+.skill-list:hover{
+    -ms-transform:scale(1.1);
+    -o-transform:scale(1.1);
+    -moz-transform:scale(1.1);
+    -webkit-transform:scale(1.1);
+    -webkit-transform:scale(1.1);
+    transform:scale(1.1);
+    border-radius: 15px;
+    box-shadow:  0px 0px 2px 1px var(--textlighter);
+
+}
+
+.project{
+    background-color: var(--backgroundsecondary);
+    border:6px double var(--accentprimary);
+    border-radius: 15px;
+    padding-bottom:10px;
+    display:table;
+    padding: 10px;
+    -ms-transition: 0.1s;
+    -o-transition: 0.1s;
+    -moz-transition: 0.1s;
+    -webkit-transition: 0.1s; 
+    transition: 0.1s; 
+    box-shadow: inset 0px 0px 5px 3px var(--textlighter);
+
+}
+
+.project:hover{
+    -ms-transform:scale(1.1);
+    -o-transform:scale(1.1);
+    -moz-transform:scale(1.1);
+    -webkit-transform:scale(1.1);
+    -webkit-transform:scale(1.1);
+    transform:scale(1.1);
+    border-radius: 15px;
+    box-shadow:  0px 0px 10px 3px var(--textlighter);
+
+}
+
+.project:nth-child(even){
+    background-color: var(--backgroundprimary);
+
+}
+
+.more-content {
+    display: none;
+    /* You can set a max-height here to control the initial visible content */
+  }
+  
+  /* Toggle the display of example content when checkbox is checked */
+  .toggle-more-less:checked ~ .more-content {
+    display: block;
+  }
+  
+  .more-less-button {
+    cursor: pointer;
+
+  }
+  
+  /* Style the label to look like a button */
+  .more-less-button::before {
+    color: var(--textlight);
+    content: "↓ More ↓";
+  }
+  
+  /* Change the content to 'Less' when the checkbox is checked */
+  .toggle-more-less:checked + .more-less-button::before {
+    color: var(--textdarker);
+    content: "↑ Less ↑";
+  }
+
+  input{
+    display: none;
+  }
+
+img{
+    max-width: 99%;
+    margin-top: 20px;
+    border: 2px solid var(--textlighter);
+    border-radius: 15px;
 }
 
 i {
-    color: #fff;
-    font-size: 50px;
+    font-size: 22pt;
+    color: var(--textlight);
+    vertical-align:middle;
 }
 
-li {
-    margin-left: 20px;
-}
 
-#about {
-    display: flex;
-}
-
-.abt-img {
-    flex: 1;
-    order: 2;
-}
-
-#abt-txt {
-    order: 3;
-    padding: 20px;
-    margin: left;
-}
-
-.square {
-    border: 2px solid #aaa;
-    margin: 10px;
-    padding: 10px;
-    background-color: #111;
-}
-
-.squarelight {
-    border: 2px solid #aaa;
-    margin: 10px;
-    padding: 10px;
-    background-color: #222;
-}
-
-.square:hover {
-    margin: 5px;
-}
-
-.squarelight:hover {
-    margin: 5px;
-}
-
-.rectangle {
-    border: 2px solid #aaa;
-    margin: 10px;
-    padding: 10px;
-    background-color: #111;
-}
-
-.rectanglelight {
-    border: 2px solid #aaa;
-    margin: 10px;
-    padding: 10px;
-    background-color: #222;
-}
-
-#contact {
+header{
+    position: fixed;
+    width: 90%;
+    background-color: var(--backgroundsecondary);
+    border: 8px double var(--accentprimary);
+    margin-top:10px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 15px;
     text-align: center;
-    border: 2px solid;
-    margin: 10px;
+    z-index: 1;
+
+}
+
+header h1{
+    font-size: 2.5em;
+}
+
+header h2{
+    font-size: 1em;
+}
+
+.work-experience-center{
+    display: grid;
+    grid-template-columns: 5% 1fr 5%;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
 }
