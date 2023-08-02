@@ -1,17 +1,13 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@200&display=swap');
 @import url('https://fonts.cdnfonts.com/css/fantasque-sans-mono');
 
 :root{
-    --scroll-offset: 20px;
     --primaryfont: "Fantasque Sans Mono", serif;
     --secondaryfont: "Noto Serif", serif;
-    --italicizedfont: "Noto Serif", sans-serif;
     --backgroundprimary: #f2e5bc;
     --backgroundsecondary: #ebdbb2;
     --backgroundtertiary: #d5c4a1;
     --accentprimary: #427b58;
-    --accentsecondary: #f44336;
     
     --textlighter: #7c6f64;
     --textlight: #665c54;
@@ -19,17 +15,14 @@
     --textdarker: #282828;
 
     --linkcolour: #458588;
-
 }
-
-
-
 
 
 html {
     scroll-snap-type: y proximity;
     scroll-behavior: smooth;
 }
+
 body { 
     scroll-snap-type: y proximity;
     display:block;
@@ -39,74 +32,59 @@ body {
     background-color: var(--backgroundtertiary);
 }
 
+.navbar{
+    background-color: var(--backgroundsecondary);
+    border: 3px solid var(--textlighter);
+    width: 100%;
+    z-index: 10;
+    
+    text-align: center;
+    align-items: center;
+
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr; 
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
 
 
-h1, h2, h3, h4, h5{
-    font-family: var(--secondaryfont), serif;
-    font-style: italic;
-    color: var(--textdark);
-}
-h4, h5{
-    color: var(--textlight);
-}
-
-h1{
-    font-size: 4em;
-    margin: 0.25em;
-    color: var(--accentprimary);
-    letter-spacing: 5px;
-    word-spacing: 7px;
-    font-weight: 100;
-}
-
-h3{
-    font-size: 1.5em;
-    margin: 0.25em;
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }
 
-h4, h5{
-    margin: 0.25em;
+.navbar h1 {
+    font-size: 1.25em;
 }
 
-
-a{
-    color: var(--linkcolour)
+.main-container {
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 section {
+    scroll-snap-align: top;
+    padding: 15px;
     margin: 10px;
     margin-bottom: 50px;
-    background-color: var(--backgroundprimary);
-    padding: 15px;
-    scroll-snap-align: top;
     border-radius: 15px;
-
+    background-color: var(--backgroundprimary);
 }
-/*
-section:nth-child(even) {
-    background-color: var(--backgroundsecondary);
-}
-*/
-
-
-
-
 
 .title-header{
-    background-color: var(--backgroundsecondary);
     border-radius: 15px;
-
+    background-color: var(--backgroundsecondary);
 }
 
-
 #skills-grid{
-    background-color: var(--backgroundsecondary);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 10px;
-    border-radius: 15px;
     padding: 10px;
+    border-radius: 15px;
+    background-color: var(--backgroundsecondary);
 }
+
 
 #projects-wrapper{
     display: grid;
@@ -138,7 +116,6 @@ section:nth-child(even) {
     transform:scale(1.1);
     border-radius: 15px;
     box-shadow:  0px 0px 2px 1px var(--textlighter);
-
 }
 
 .project{
@@ -164,9 +141,7 @@ section:nth-child(even) {
     -webkit-transform:scale(1.1);
     -webkit-transform:scale(1.1);
     transform:scale(1.1);
-    border-radius: 15px;
     box-shadow:  0px 0px 10px 3px var(--textlighter);
-
 }
 
 .project:nth-child(even){
@@ -176,34 +151,72 @@ section:nth-child(even) {
 
 .more-content {
     display: none;
-    /* You can set a max-height here to control the initial visible content */
-  }
+}
   
-  /* Toggle the display of example content when checkbox is checked */
-  .toggle-more-less:checked ~ .more-content {
+.toggle-more-less:checked ~ .more-content {
     display: block;
-  }
+}
   
-  .more-less-button {
+.more-less-button {
     cursor: pointer;
-
-  }
+}
   
-  /* Style the label to look like a button */
-  .more-less-button::before {
+.more-less-button::before {
     color: var(--textlight);
     content: "↓ More ↓";
-  }
+}
   
-  /* Change the content to 'Less' when the checkbox is checked */
-  .toggle-more-less:checked + .more-less-button::before {
+.toggle-more-less:checked + .more-less-button::before {
     color: var(--textdarker);
     content: "↑ Less ↑";
-  }
+}
 
-  input{
+input {
     display: none;
-  }
+}
+
+.work-experience-center {
+    display: grid;
+    grid-template-columns: 5% 1fr 5%;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5 {
+    font-family: var(--secondaryfont), serif;
+    font-style: italic;
+    color: var(--textdark);
+}
+
+h1{
+    font-size: 4em;
+    margin: 0.25em;
+    color: var(--accentprimary);
+    letter-spacing: 5px;
+    word-spacing: 7px;
+    font-weight: 100;
+}
+
+h3{
+    font-size: 1.5em;
+    margin: 0.25em;
+}
+
+h4, 
+h5 {
+    margin: 0.25em;
+    color: var(--textlight);
+}
+
+a {
+    color: var(--linkcolour)
+}
+
 
 img{
     max-width: 99%;
@@ -218,81 +231,46 @@ i {
     vertical-align:middle;
 }
 
-.work-experience-center{
-    display: grid;
-    grid-template-columns: 5% 1fr 5%;
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px; 
-}
-
-.main{
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.navbar{
-    background-color: var(--backgroundsecondary);
-    border: 3px solid var(--textlighter);
-    width: 100%;
-    z-index: 10;
-    
-    text-align: center;
-    align-items: center;
-
-    display: grid;
-    grid-template-columns: 1fr 4fr 1fr; 
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px; 
-
-
-    position: fixed;
-    bottom: 0;
-    left: 0;
-}
-
-.navbar h1{
-    font-size: 1.25em;
-
-    
-}
 
 @media screen and (max-width: 600px) {
-    h1{
-        font-size: 2em;
-    }
-    h2{
-        font-size: 1em;
-    }
-    h3{
-        font-size: 1em;
-    }
-    body{
+    body {
         font-size: 13pt;
     }
-    i{
-        font-size: 15pt;
-    }
 
-    #projects-wrapper{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-column-gap: 20px;
-        grid-row-gap: 20px;
-    }
     .navbar {
-      height: auto;
-      display: block;
+        height: auto;
+        display: block;
     }
 
     .navbar h1{
         display: none;
     }
 
+    .main-container {
+        margin: 0 auto;
+    }
+
+    #projects-wrapper {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1em;
+    }
+    h3 {
+        font-size: 1em;
+    }
+    i {
+        font-size: 15pt;
+    }
+
   }
-
-
 
 .image-carousel{
     margin: auto;
@@ -303,7 +281,6 @@ i {
     border-top: 2px solid var(--textlighter);
     border-bottom: 2px solid var(--textlighter);
     background-color: var(--backgroundsecondary);
-    
 }
 
 .slide-track{
@@ -323,7 +300,6 @@ i {
     width: 300px;
     margin-top: 0px;
 }
-
 
 .image-carousel::before,
 .image-carousel::after{
