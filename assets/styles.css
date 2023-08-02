@@ -75,7 +75,7 @@ a{
 
 section {
     margin: 10px;
-    margin-top: 240px;
+    margin-bottom: 50px;
     background-color: var(--backgroundprimary);
     padding: 15px;
     scroll-snap-align: top;
@@ -95,11 +95,12 @@ section:nth-child(even) {
 .title-header{
     background-color: var(--backgroundsecondary);
     border-radius: 15px;
+
 }
 
 
 #skills-grid{
-    background-color: var(--backgroundtertiary);
+    background-color: var(--backgroundsecondary);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 10px;
@@ -115,7 +116,7 @@ section:nth-child(even) {
 }
 
 .skill-list{
-    background-color: var(--backgroundsecondary);
+    background-color: var(--backgroundprimary);
     border:2px solid var(--accentprimary);
     border-radius: 15px;
     padding: 10px;
@@ -142,7 +143,7 @@ section:nth-child(even) {
 
 .project{
     background-color: var(--backgroundsecondary);
-    border:6px double var(--accentprimary);
+    border:2px solid var(--accentprimary);
     border-radius: 15px;
     padding-bottom:10px;
     display:table;
@@ -217,30 +218,6 @@ i {
     vertical-align:middle;
 }
 
-
-header{
-    position: fixed;
-    width: 90%;
-    background-color: var(--backgroundsecondary);
-    border: 8px double var(--accentprimary);
-    margin-top:10px;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 15px;
-    text-align: center;
-    z-index: 1;
-
-}
-
-header h1{
-    font-size: 2.5em;
-}
-
-header h2{
-    font-size: 1em;
-}
-
 .work-experience-center{
     display: grid;
     grid-template-columns: 5% 1fr 5%;
@@ -248,3 +225,153 @@ header h2{
     grid-column-gap: 0px;
     grid-row-gap: 0px; 
 }
+
+.main{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.navbar{
+    background-color: var(--backgroundsecondary);
+    border: 3px solid var(--textlighter);
+    width: 100%;
+    z-index: 10;
+    
+    text-align: center;
+    align-items: center;
+
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr; 
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
+
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.navbar h1{
+    font-size: 1.25em;
+
+    
+}
+
+@media screen and (max-width: 600px) {
+    h1{
+        font-size: 2em;
+    }
+    h2{
+        font-size: 1em;
+    }
+    h3{
+        font-size: 1em;
+    }
+    body{
+        font-size: 13pt;
+    }
+    i{
+        font-size: 15pt;
+    }
+
+    #projects-wrapper{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+    .navbar {
+      height: auto;
+      display: block;
+    }
+
+    .navbar h1{
+        display: none;
+    }
+
+  }
+
+
+
+.image-carousel{
+    margin: auto;
+    display: grid;
+    place-items: center;  
+    overflow: hidden; 
+    position: relative;
+    border-top: 2px solid var(--textlighter);
+    border-bottom: 2px solid var(--textlighter);
+    background-color: var(--backgroundsecondary);
+    
+}
+
+.slide-track{
+    display: flex;
+    width: calc(300px * 10);
+    animation: scroll 30s linear infinite;
+}
+
+.slide {
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+.image-slide{
+    width: 300px;
+    margin-top: 0px;
+}
+
+
+.image-carousel::before,
+.image-carousel::after{
+    background: linear-gradient(to right, var(--backgroundprimary) 0%, rgba(255,255,255,0) 100%);
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 5%;
+    z-index: 2;
+}
+
+.image-carousel::before{
+    left: 0;
+    top: 0;
+}
+
+.image-carousel::after{
+    right: 0;
+    top: 0;
+    transform: rotate(180deg);
+}
+
+@keyframes scroll {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-300px * 5));
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
