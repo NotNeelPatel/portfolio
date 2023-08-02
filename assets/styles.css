@@ -15,6 +15,8 @@
     --textdarker: #282828;
 
     --linkcolour: #458588;
+
+    --img_carousel_width: 300px;
 }
 
 
@@ -34,7 +36,7 @@ body {
 
 .navbar{
     background-color: var(--backgroundsecondary);
-    border: 3px solid var(--textlighter);
+    border-top: 3px solid var(--textlighter);
     width: 100%;
     z-index: 10;
     
@@ -217,12 +219,16 @@ a {
     color: var(--linkcolour)
 }
 
-
 img{
     max-width: 99%;
     margin-top: 20px;
     border: 2px solid var(--textlighter);
     border-radius: 15px;
+}
+
+.image-slide{
+    width: 300px;
+    margin-top: 0px;
 }
 
 i {
@@ -232,7 +238,10 @@ i {
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
+    :root{
+        --img_carousel_width: 150px;
+    }
     body {
         font-size: 13pt;
     }
@@ -257,6 +266,12 @@ i {
         grid-row-gap: 20px;
     }
 
+    .image-slide{
+        width: 150px;
+        margin-top: 0px;
+    }
+
+
     h1 {
         font-size: 2em;
     }
@@ -272,6 +287,7 @@ i {
 
   }
 
+
 .image-carousel{
     margin: auto;
     display: grid;
@@ -285,7 +301,7 @@ i {
 
 .slide-track{
     display: flex;
-    width: calc(300px * 10);
+    width: calc(var(--img_carousel_width) * 10);
     animation: scroll 30s linear infinite;
 }
 
@@ -296,18 +312,13 @@ i {
     padding: 15px;
 }
 
-.image-slide{
-    width: 300px;
-    margin-top: 0px;
-}
-
 .image-carousel::before,
 .image-carousel::after{
-    background: linear-gradient(to right, var(--backgroundprimary) 0%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(to right, var(--backgroundsecondary) 0%, var(--backgroundsecondary) 50%, rgba(255,255,255,0) 100%);
     content: "";
     height: 100%;
     position: absolute;
-    width: 5%;
+    width: 15%;
     z-index: 2;
 }
 
@@ -327,7 +338,7 @@ i {
         transform: translateX(0);
     }
     100%{
-        transform: translateX(calc(-300px * 5));
+        transform: translateX(calc(var(--img_carousel_width) * -5));
     }
     
 }
