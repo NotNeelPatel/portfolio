@@ -338,7 +338,7 @@ i {
         transform: translateX(0);
     }
     100%{
-        transform: translateX(calc(var(--img_carousel_width) * -5));
+        transform: translateX(calc(var(--img_carousel_width) * -6));
     }
     
 }
