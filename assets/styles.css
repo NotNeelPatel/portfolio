@@ -17,6 +17,7 @@
     --linkcolour: #458588;
 
     --img_carousel_width: 300px;
+    --img_carousel_size: 6;
 }
 
 
@@ -301,7 +302,7 @@ i {
 
 .slide-track{
     display: flex;
-    width: calc(var(--img_carousel_width) * 10);
+    width: calc(var(--img_carousel_width) * calc(var(--img_carousel_size)*2));
     animation: scroll 30s linear infinite;
 }
 
