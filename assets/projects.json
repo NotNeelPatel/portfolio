@@ -1,0 +1,59 @@
+[
+    {
+        "title": "AI Bamboo Plant",
+        "description": "Using a water sensor, the bamboo plant will use AI (LLaMA running on local server) to write an insulting speech about me neglecting to water the plant and plays on the speaker using AI text-to-speech. Video in GitHub README.",
+        "img": "./assets/bamboo.jpg",
+        "gh": "https://github.com/NotNeelPatel/lucki-bamboo-ai",
+        "tech":  ["devicon-python-plain", "devicon-raspberrypi-line", "devicon-ubuntu-plain"]
+    },
+    {
+        "title": "AI GitHub Actions Workflow Analyzer",
+        "description": "Implemented a RAG workflow in an AI agent that analyzes GitHub Actions workflows. This workflow identifies failures and suggests potential solutions using the workflow logs and source code.",
+        "img": "./assets/actionsanalyze.jpg",
+        "gh": "https://github.com/solace-dfinlay/sample-github-workflows",
+        "tech":  ["devicon-python-plain", "devicon-github-plain"]
+    },
+    {
+        "title": "Ross Video FPGA Challenge - Frame Out",
+        "description": "<p>Wrote a Python script to convert gif to frames that can be interpreted in a simulated ROM of a FPGA. Assisted in displaying outputted videos using SystemVerilog. Winning Team.</p><p><a href='https://devpost.com/software/frame-out'>Devpost Submission</a>",
+        "img": "./assets/frame-out.gif",
+        "gh": "https://github.com/NotNeelPatel/hth2-ross-fpga-challenge",
+        "tech":  ["devicon-python-plain"]
+    },
+    {
+        "title": "Docs Chatbot",
+        "description": "Developed and deployed an LLM for an assistant that helps developers navigate Solace Documentation. Winning team of a Solace Internal Hackathon.",
+        "img": "./assets/docschat.jpg",
+        "gh": "https://github.com/Patrick-Bonini/SuperChargedChatBot",
+        "tech":  ["devicon-python-plain", "devicon-react-original"]
+    },
+    {
+        "title": "Wallpaper Theme Converter",
+        "description": "<p>A website that converts any image to any colour palette using JavaScript.</p><p>Used by many enthusiasts with 50+ stars on GitHub.</p><p><a href='https://notneelpatel.github.io/WallpaperThemeConverter'>Try Wallpaper Theme Converter</a></p>",
+        "img": "./assets/wallpaperthemeconverter.jpg",
+        "gh": "https://github.com/notneelpatel/WallpaperThemeConverter",
+        "tech":  ["devicon-html5-plain", "devicon-css3-plain", "devicon-javascript-plain"]
+    },
+    {
+        "title": "Liam Carney's Website",
+        "description": "<p>Created a portfolio website for my musician friend, with interactive animations/elements for the discography section.</p><p><a href='https://liam-carney.com'>Visit Liam's Website</a></p>",
+        "img": "./assets/liam-carney.jpg",
+        "gh": "https://github.com/liamjcarney/liamjcarney.github.io",
+        "tech":  ["devicon-html5-plain", "devicon-css3-plain", "devicon-javascript-plain"]
+    },
+    {
+        "title": "ForPaws",
+        "description": "<p>I created a group with intentions to learn about web development, called <a href='https://github.com/MeowDevCU'>MeowDev</a>.</p><p>Forpaws is the first project, aimed to make a social media for pet owners to share media revolving around their pets.</p>",
+        "img": "./assets/forpaws.jpg",
+        "gh": "https://github.com/MeowDevCU",
+        "tech":  ["devicon-html5-plain", "devicon-css3-plain", "devicon-javascript-plain", "devicon-react-original", "devicon-firebase-plain"]
+    },
+    {
+        "title": "Midi Search",
+        "description": "<p>A command-line interface that searches and downloads MIDI files from <a href='https://archive.org/details/midiman_melody_kit_1.0_2015-06'>archive.org</a>.</p>",
+        "img": "./assets/midi.jpg",
+        "gh": "https://github.com/NotNeelPatel/MidiManSearch",
+        "tech":  ["devicon-bash-plain"]
+    }
+
+]
