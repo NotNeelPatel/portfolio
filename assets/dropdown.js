@@ -15,4 +15,18 @@ document.addEventListener('DOMContentLoaded', () => {
             }        
         });
     });
+
+    const hamburger = document.getElementById('hamburger');
+
+    hamburger.addEventListener('click', () => {
+        const experience = document.querySelector('.experience');
+        if (experience.style.visibility === "visible") {
+            experience.style.transform = "translateX(-100%)";            hamburger.textContent = "☰"
+            experience.style.visibility = "hidden"
+            return;
+        }
+        experience.style.transform = "translateX(0)";
+        experience.style.visibility = "visible"
+        hamburger.textContent = "✕"
+    });
 });

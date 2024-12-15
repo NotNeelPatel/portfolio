@@ -129,11 +129,19 @@ body {
 .experience{
     background: var(--backgroundprimary);
     padding: 1em;
+    margin-top: 0;
+    padding-top: 0;
     box-sizing: border-box;
     position: fixed;
     width: 40vw;
     height: 100vh;
     overflow-y: scroll;
+}
+
+.experience h2{
+    text-align: center;
+    text-decoration-line: underline;
+    text-decoration-color: var(--accentprimary);
 }
 
 
@@ -235,6 +243,16 @@ body {
     background-color: var(--backgroundprimary);
     text-align: center;
     z-index: 8;
+    text-decoration-line: underline;
+    text-decoration-color: var(--accentprimary);
+}
+
+#hamburger{
+    display: none;
+}
+
+#x-button {
+    display: none;
 }
 
 .project-container{
@@ -423,17 +441,56 @@ img{
     h1{
         font-size: 3em;
     }
-    .mobile{
 
-        visibility: visible;
-        background-color: var(--backgroundprimary);
-        z-index: 9;
-        position: fixed;
-        top: 0;
-        left: 0;
+    .experience{
         width: 100vw;
-        height: 100vh;
+        z-index: 10;
+        transform: translateX(-100%); /* Start off-screen to the left */
+        transition: transform 0.5s ease, opacity 0.5s ease, visibility 0.5s;
     }
+    
+    .experience.visible {
+        transform: translateX(0); /* Move into view */
+    }
+
+    .projects{
+        width: 100vw;
+        font-size: 0.8em;
+    }
+
+    .projects-header{
+        width: 100vw;
+        font-size: 1.2rem;
+    }
+    #projects-border{
+        width: 100vw;
+    }
+    .project-card{
+        width: 80vw;
+        height: 50vh;
+    }
+    .project-tech{
+        position: absolute;
+        left: 20px;
+        bottom: 20px;
+    }
+
+    .navbar{
+        width: 100vw;
+    }
+    .navbar h1{
+        font-size: 1.8em;
+    }
+
+    #hamburger{
+        display: block;
+        position: fixed;
+        top: 0vh;
+        right: 6vw;
+        z-index: 12;
+        
+    }
+
 }
 
 

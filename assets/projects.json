@@ -22,7 +22,7 @@
     },
     {
         "title": "Docs Chatbot",
-        "description": "Developed and deployed an LLM for an assistant that helps developers navigate Solace Documentation. Winning team of a Solace Internal Hackathon.",
+        "description": "Developed and deployed an LLM for an assistant that helps developers navigate Solace Documentation. Winning team of an internal hackathon at Solace.",
         "img": "./assets/docschat.jpg",
         "gh": "https://github.com/Patrick-Bonini/SuperChargedChatBot",
         "tech":  ["devicon-python-plain", "devicon-react-original"]
