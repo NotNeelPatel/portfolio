@@ -29,10 +29,17 @@
     },
     {
         "title": "Wallpaper Theme Converter",
-        "description": "<p>A website that converts any image to any colour palette using JavaScript.</p><p>Used by many enthusiasts with 50+ stars on GitHub.</p><p><a href='https://notneelpatel.github.io/WallpaperThemeConverter'>Try Wallpaper Theme Converter</a></p>",
+        "description": "<p>A website that converts any image to any colour palette using JavaScript.</p><p>Used by many enthusiasts with <strong>100+ stars on GitHub</strong>.</p><p><a href='https://notneelpatel.github.io/WallpaperThemeConverter'>Try Wallpaper Theme Converter</a></p>",
         "img": "./assets/wallpaperthemeconverter.jpg",
         "gh": "https://github.com/notneelpatel/WallpaperThemeConverter",
         "tech":  ["devicon-html5-plain", "devicon-css3-plain", "devicon-javascript-plain"]
+    },
+    {
+        "title": "AI Capstone Project",
+        "description": "My capstone project that uses RAG and a multi-agent framework to retrieve data and answer sophisticated questions. May be deployed for usage by the client. Contact for more information",
+        "img": "./assets/pfp.png",
+        "gh": "",
+        "tech": ["devicon-python-plain", "devicon-react-original"]
     },
     {
         "title": "Liam Carney's Website",
