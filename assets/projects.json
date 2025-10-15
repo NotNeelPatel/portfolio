@@ -35,8 +35,15 @@
         "tech":  ["devicon-html5-plain", "devicon-css3-plain", "devicon-javascript-plain"]
     },
     {
+        "title": "Cat Monitoring System - SYSC 3010",
+        "description": "<p>Led a team to design PawParazzi: A system to monitor and play with cats remotely via a Web UI, using real-time messaging technology and Raspberry Pi hardware.</p><a href='https://www.youtube.com/watch?v=53mF-kUo3Uc'>Watch Demo Video</a>",
+        "img": "./assets/pawparazzi.jpg",
+        "gh": "https://www.youtube.com/watch?v=53mF-kUo3Uc",
+        "tech": ["devicon-python-plain", "devicon-raspberrypi-line", "devicon-linux-plain", "devicon-html5-plain", "devicon-css3-plain", "devicon-javascript-plain"]
+    },
+    {
         "title": "AI Capstone Project",
-        "description": "My capstone project that uses RAG and a multi-agent framework to retrieve data and answer sophisticated questions. May be deployed for usage by the client. Contact for more information",
+        "description": "<p>My capstone project that uses RAG and a multi-agent framework to retrieve data and answer sophisticated questions. May be deployed for usage by the client.</p><p>Contact for more information</p>",
         "img": "./assets/pfp.png",
         "gh": "",
         "tech": ["devicon-python-plain", "devicon-react-original"]
