@@ -7,12 +7,12 @@
         "tech":  ["devicon-python-plain", "devicon-raspberrypi-line", "devicon-ubuntu-plain"]
     },
     {
-        "title": "AI GitHub Actions Workflow Analyzer",
-        "description": "Implemented a RAG workflow in an AI agent that analyzes GitHub Actions workflows. This workflow identifies failures and suggests potential solutions using the workflow logs and source code.",
-        "img": "./assets/actionsanalyze.jpg",
-        "gh": "https://github.com/solace-dfinlay/sample-github-workflows",
-        "tech":  ["devicon-python-plain", "devicon-github-plain"]
-    },
+        "title": "AI Capstone Project - CityAgent",
+        "description": "<p>My Capstone project, involving the City of Ottawa that helps answer questions based on asset management documents. It uses RAG and a multi-agent system to provide data-driven responses with error-checking, wrapped in an accessible UI, while being incredibly modular.</p>",
+        "img": "./assets/cityagent.jpg",
+        "gh": "https://github.com/NotNeelPatel/CityAgent",
+        "tech": ["devicon-python-plain", "devicon-react-original"]
+    }, 
     {
         "title": "Ross Video FPGA Challenge - Frame Out",
         "description": "<p>Wrote a Python script to convert gif to frames that can be interpreted in a simulated ROM of a FPGA. Assisted in displaying outputted videos using SystemVerilog. Winning Team.</p><p><a href='https://devpost.com/software/frame-out'>Devpost Submission</a>",
@@ -21,18 +21,25 @@
         "tech":  ["devicon-python-plain"]
     },
     {
+        "title": "Wallpaper Theme Converter",
+        "description": "<p>A website that converts any image to any colour palette using JavaScript.</p><p>Used by many enthusiasts with <strong>130+ stars on GitHub</strong>.</p><p><a href='https://notneelpatel.github.io/WallpaperThemeConverter'>Try Wallpaper Theme Converter</a></p>",
+        "img": "./assets/wallpaperthemeconverter.jpg",
+        "gh": "https://github.com/notneelpatel/WallpaperThemeConverter",
+        "tech":  ["devicon-html5-plain", "devicon-css3-plain", "devicon-javascript-plain"]
+    },
+    {
         "title": "Docs Chatbot",
         "description": "Developed and deployed an LLM for an assistant that helps developers navigate Solace Documentation. Winning team of an internal hackathon at Solace.",
         "img": "./assets/docschat.jpg",
         "gh": "https://github.com/Patrick-Bonini/SuperChargedChatBot",
         "tech":  ["devicon-python-plain", "devicon-react-original"]
     },
-    {
-        "title": "Wallpaper Theme Converter",
-        "description": "<p>A website that converts any image to any colour palette using JavaScript.</p><p>Used by many enthusiasts with <strong>100+ stars on GitHub</strong>.</p><p><a href='https://notneelpatel.github.io/WallpaperThemeConverter'>Try Wallpaper Theme Converter</a></p>",
-        "img": "./assets/wallpaperthemeconverter.jpg",
-        "gh": "https://github.com/notneelpatel/WallpaperThemeConverter",
-        "tech":  ["devicon-html5-plain", "devicon-css3-plain", "devicon-javascript-plain"]
+	{
+        "title": "AI GitHub Actions Workflow Analyzer",
+        "description": "Implemented a RAG workflow in an AI agent that analyzes GitHub Actions workflows. This workflow identifies failures and suggests potential solutions using the workflow logs and source code.",
+        "img": "./assets/actionsanalyze.jpg",
+        "gh": "https://github.com/solace-dfinlay/sample-github-workflows",
+        "tech":  ["devicon-python-plain", "devicon-github-plain"]
     },
     {
         "title": "Cat Monitoring System - SYSC 3010",
@@ -40,14 +47,7 @@
         "img": "./assets/pawparazzi.jpg",
         "gh": "https://www.youtube.com/watch?v=53mF-kUo3Uc",
         "tech": ["devicon-python-plain", "devicon-raspberrypi-line", "devicon-linux-plain", "devicon-html5-plain", "devicon-css3-plain", "devicon-javascript-plain"]
-    },
-    {
-        "title": "AI Capstone Project",
-        "description": "<p>My capstone project that uses RAG and a multi-agent framework to retrieve data and answer sophisticated questions. May be deployed for usage by the client.</p><p>Contact for more information</p>",
-        "img": "./assets/pfp.png",
-        "gh": "",
-        "tech": ["devicon-python-plain", "devicon-react-original"]
-    },
+    }, 
     {
         "title": "Liam Carney's Website",
         "description": "<p>Created a portfolio website for my musician friend, with interactive animations/elements for the discography section.</p><p><a href='https://liam-carney.com'>Visit Liam's Website</a></p>",
