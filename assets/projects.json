@@ -22,7 +22,7 @@
     },
     {
         "title": "Wallpaper Theme Converter",
-        "description": "<p>A website that converts any image to any colour palette using JavaScript.</p><p>Used by many enthusiasts with <strong>140+ stars on GitHub</strong>.</p><p><a href='https://notneelpatel.github.io/WallpaperThemeConverter'>Try Wallpaper Theme Converter</a></p>",
+        "description": "<p>A website that converts any image to any colour palette using JavaScript.</p><p>Used by many enthusiasts with <strong>150+ stars on GitHub</strong>.</p><p><a href='https://notneelpatel.github.io/WallpaperThemeConverter'>Try Wallpaper Theme Converter</a></p>",
         "img": "./assets/wallpaperthemeconverter.jpg",
         "gh": "https://github.com/notneelpatel/WallpaperThemeConverter",
         "tech":  ["devicon-html5-plain", "devicon-css3-plain", "devicon-javascript-plain"]
