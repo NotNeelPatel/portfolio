@@ -28,13 +28,20 @@
         "tech":  ["devicon-html5-plain", "devicon-css3-plain", "devicon-javascript-plain"]
     },
     {
+        "title": "FPGA GameBoy Colour Filter",
+        "description": "A simple image/video processor using Vivado IP blocks + my custom Verilog implementations.",
+        "img": "./assets/colour-filter.gif",
+        "gh": "",
+        "tech": []
+    },
+    {
         "title": "Docs Chatbot",
         "description": "Developed and deployed an LLM for an assistant that helps developers navigate Solace Documentation. Winning team of an internal hackathon at Solace.",
         "img": "./assets/docschat.jpg",
         "gh": "https://github.com/Patrick-Bonini/SuperChargedChatBot",
         "tech":  ["devicon-python-plain", "devicon-react-original"]
     },
-	{
+    {
         "title": "AI GitHub Actions Workflow Analyzer",
         "description": "Implemented a RAG workflow in an AI agent that analyzes GitHub Actions workflows. This workflow identifies failures and suggests potential solutions using the workflow logs and source code.",
         "img": "./assets/actionsanalyze.jpg",
